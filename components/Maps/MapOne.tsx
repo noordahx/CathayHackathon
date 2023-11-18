@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { VectorMap } from "@react-jvectormap/core";
 import { usAea } from "@react-jvectormap/unitedstates";
 
@@ -9,9 +9,13 @@ const MapOne = () => {
     setInputValue(event.target.value);
   };
 
+  useEffect(() => {
+
+  }, [inputValue]);
+
   const callIt = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/predict?param=${encodeURIComponent(inputValue)}`);
+      const response = await fetch(`http://localhost:8000/predict?param=${encodeURIComponent(inputValue)}`);
       const data = await response.json();
       console.log(data);
     } catch (error) {
