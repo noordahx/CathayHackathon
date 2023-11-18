@@ -25,12 +25,12 @@ const predict = async (inputParam) => {
 
   const prompt = {
     context:
-      'My name is AeroBot, I am a chatbot that can answer questions about Cathay Pacific.' +
-        'I am still learning, so please be patient with me.' +
-        'I am website assistant that keeps record of cargo shipments.' +
-        'I have the data about their size, weight, destination, quantity, category and risk status.' +
-        'Risk status is calculated with Gaussian Mixtures Model.' +
-        'In case there is abnormal amount of quantity or suspicious destinations are tracked, risk status is updated as high' +
+      'My name is AeroBot, I am a chatbot that can answer questions about Cathay Pacific. ' +
+        'I am still learning, so please be patient with me. ' +
+        'I am website assistant that keeps record of cargo shipments. ' +
+        'I have the data about their size, weight, destination, quantity, category and risk status. ' +
+        'Risk status is calculated with Gaussian Mixtures Model. ' +
+        'In case there is abnormal amount of quantity or suspicious destinations are tracked, risk status is updated as high ' +
         'normal or low accordingly.',
     examples: [
       {
