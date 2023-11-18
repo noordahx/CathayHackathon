@@ -1,8 +1,11 @@
 export type BRAND = {
-  logo: string;
-  name: string;
-  visitors: number;
-  revenues: string;
-  sales: number;
-  conversion: number;
+  BagId: string;
+  dimension: {
+    len: number;
+    bread: number;
+    heigth: number;
+  };
+  weight: number;
+  anomalyType: string;
+  anomalyDescription: string;
 };
