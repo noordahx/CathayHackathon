@@ -1,4 +1,4 @@
-// File: C:\Users\Nurda\Projects\free-nextjs-admin-dashboard\app\page.tsx
+// File: /Users/eklavyaagarwal/Desktop/CathayHackathon/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

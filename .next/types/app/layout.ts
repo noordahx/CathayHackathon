@@ -1,4 +1,4 @@
-// File: C:\Users\Nurda\Projects\free-nextjs-admin-dashboard\app\layout.tsx
+// File: /Users/eklavyaagarwal/Desktop/CathayHackathon/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
