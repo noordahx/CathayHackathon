@@ -1,157 +1,157 @@
 "use client";
-import { ApexOptions } from "apexcharts";
-import React, { useState } from "react";
+import {ApexOptions} from "apexcharts";
+import React, {useState} from "react";
 import dynamic from "next/dynamic";
-const ApexCharts = dynamic(() => import("react-apexcharts"), { ssr: false });
+
+const ApexCharts = dynamic(() => import("react-apexcharts"), {ssr: false});
 
 interface ChartFourState {
-  series: { data: number[] }[];
+    series: { data: number[] }[];
 }
 
 const ChartFour: React.FC = () => {
-  const [state, setState] = useState<ChartFourState>({
-    series: [
-      {
-        data: [
-          168, 385, 201, 298, 187, 195, 291, 110, 215, 390, 280, 112, 123, 212,
-          270, 190, 310, 115, 90, 380, 112, 223, 292, 170, 290, 110, 115, 290,
-          380, 312,
+    const [state, setState] = useState<ChartFourState>({
+        series: [
+            {
+                data: [
+                    10, 13, 12, 11, 0, 12, 6, 10, 8, 13, 6, 2, 16, 5, 0, 12, 14, 13, 19, 11, 6, 5, 6, 19, 6, 19, 11, 0, 19, 18
+                ],
+            },
         ],
-      },
-    ],
-  });
+    });
 
-  // Update the state
-  const updateState = () => {
-    setState((prevState) => ({
-      ...prevState,
-      // Update the desired properties
-    }));
-  };
-  updateState;
+    // Update the state
+    const updateState = () => {
+        setState((prevState) => ({
+            ...prevState,
+            // Update the desired properties
+        }));
+    };
+    updateState;
 
-  const options: ApexOptions = {
-    colors: ["#3C50E0"],
-    chart: {
-      fontFamily: "Satoshi, sans-serif",
-      type: "bar",
-      height: 350,
-      toolbar: {
-        show: false,
-      },
-    },
-    plotOptions: {
-      bar: {
-        horizontal: false,
-        columnWidth: "55%",
-        // endingShape: "rounded",
-        borderRadius: 2,
-      },
-    },
-    dataLabels: {
-      enabled: false,
-    },
-    stroke: {
-      show: true,
-      width: 4,
-      colors: ["transparent"],
-    },
-    xaxis: {
-      categories: [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17",
-        "18",
-        "19",
-        "20",
-        "21",
-        "22",
-        "23",
-        "24",
-        "25",
-        "26",
-        "27",
-        "28",
-        "29",
-        "30",
-      ],
-      axisBorder: {
-        show: false,
-      },
-      axisTicks: {
-        show: false,
-      },
-    },
-    legend: {
-      show: true,
-      position: "top",
-      horizontalAlign: "left",
-      fontFamily: "inter",
-
-      markers: {
-        radius: 99,
-      },
-    },
-    // yaxis: {
-    //   title: false,
-    // },
-    grid: {
-      yaxis: {
-        lines: {
-          show: false,
+    const options: ApexOptions = {
+        colors: ["#3C50E0"],
+        chart: {
+            fontFamily: "Satoshi, sans-serif",
+            type: "bar",
+            height: 350,
+            toolbar: {
+                show: false,
+            },
         },
-      },
-    },
-    fill: {
-      opacity: 1,
-    },
+        plotOptions: {
+            bar: {
+                horizontal: false,
+                columnWidth: "55%",
+                // endingShape: "rounded",
+                borderRadius: 2,
+            },
+        },
+        dataLabels: {
+            enabled: false,
+        },
+        stroke: {
+            show: true,
+            width: 4,
+            colors: ["transparent"],
+        },
+        xaxis: {
+            categories: [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+            ],
+            axisBorder: {
+                show: false,
+            },
+            axisTicks: {
+                show: false,
+            },
+        },
+        legend: {
+            show: true,
+            position: "top",
+            horizontalAlign: "left",
+            fontFamily: "inter",
 
-    tooltip: {
-      x: {
-        show: false,
-      },
-      // y: {
-      //   formatter: function (val) {
-      //     return val;
-      //   },
-      // },
-    },
-  };
+            markers: {
+                radius: 99,
+            },
+        },
+        // yaxis: {
+        //   title: false,
+        // },
+        grid: {
+            yaxis: {
+                lines: {
+                    show: false,
+                },
+            },
+        },
+        fill: {
+            opacity: 1,
+        },
 
-  return (
-    <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5">
-      <div>
-        <h3 className="text-xl font-semibold text-black dark:text-white">
-          Visitors Analytics
-        </h3>
-      </div>
+        tooltip: {
+            x: {
+                show: false,
+            },
+            // y: {
+            //   formatter: function (val) {
+            //     return val;
+            //   },
+            // },
+        },
+    };
 
-      <div className="mb-2">
-        <div id="chartFour" className="-ml-5">
-          <ApexCharts
-            options={options}
-            series={state.series}
-            type="bar"
-            height={350}
-          />
+    return (
+        <div
+            className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5">
+            <div>
+                <h3 className="text-xl font-semibold text-black dark:text-white">
+                    Monthly alerts
+                </h3>
+            </div>
+
+            <div className="mb-2">
+                <div id="chartFour" className="-ml-5">
+                    <ApexCharts
+                        options={options}
+                        series={state.series}
+                        type="bar"
+                        height={350}
+                    />
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default ChartFour;
