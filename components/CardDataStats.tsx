@@ -33,14 +33,14 @@ const CardDataStats: React.FC<CardDataStatsProps> = ({
 
         <span
           className={`flex items-center gap-1 text-sm font-medium ${
-            levelUp && 'text-meta-3'
-          } ${levelDown && 'text-meta-5'} `}
+            levelUp && 'text-meta-1'
+          } ${levelDown && 'text-meta-3'} `}
         >
           {rate}
 
           {levelUp && (
             <svg
-              className="fill-meta-3"
+              className="fill-meta-1"
               width="10"
               height="11"
               viewBox="0 0 10 11"
@@ -55,7 +55,7 @@ const CardDataStats: React.FC<CardDataStatsProps> = ({
           )}
           {levelDown && (
             <svg
-              className="fill-meta-5"
+              className="fill-meta-3"
               width="10"
               height="11"
               viewBox="0 0 10 11"

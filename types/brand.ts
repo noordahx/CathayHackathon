@@ -8,4 +8,5 @@ export type BRAND = {
   weight: number;
   anomalyType: string;
   anomalyDescription: string;
+  alert: number;
 };
