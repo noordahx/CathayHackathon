@@ -8,8 +8,8 @@ const options: ApexOptions = {
   colors: ["#3C50E0", "#80CAEE"],
   chart: {
     // events: {
-    //   beforeMount: (chart) => {
-    //     chart.windowResizeHandler();
+    //   beforeMount: (report) => {
+    //     report.windowResizeHandler();
     //   },
     // },
     fontFamily: "Satoshi, sans-serif",
