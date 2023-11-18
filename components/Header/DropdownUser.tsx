@@ -44,9 +44,9 @@ const DropdownUser = () => {
       >
         <span className="hidden text-right lg:block">
           <span className="block text-sm font-medium text-black dark:text-white">
-          Danish Heilium
+          AeroGeniuses Alliance
           </span>
-          <span className="block text-xs">Cargo Managing Employee</span>
+          {/*<span className="block text-xs">Cargo Managing Employee</span>*/}
         </span>
 
         <span className="h-12 w-12 rounded-full">
