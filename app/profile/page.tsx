@@ -16,7 +16,7 @@ const Profile = () => {
       <div className="overflow-hidden rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
         <div className="relative z-20 h-35 md:h-65">
           <Image
-            src={"/images/aerogens/group-photo.jpg"}
+            src={"/images/aerogens/group-photo-new.jpg"}
             alt="profile cover"
             className="h-full w-full rounded-tl-sm rounded-tr-sm object-cover object-center"
             width={970}
@@ -111,13 +111,16 @@ const Profile = () => {
               </h4>
            
               <p className="mt-4.5">
-              We are CityU students passionate about technology,
+                We, the AeroGenius Alliance, are a team of five motivated students hailing from CityU University of Hong Kong, representing three countries and four different disciplines. With a deep-rooted passion for aviation, some of us have grown up in aviation households, fueling our love for all things related to flight. Our hearts beat with the aviation blood coursing through our veins.
+              </p>
+              <p className="mt-4.5">
+                Driven by our passion for technology, we are determined to lead the future. We firmly believe in our ability to effect change and shape the future through our innovative solutions, creating a ripple effect that will transform the world.
               </p>
             </div>
 
             <div className="mt-6.5">
               <h4 className="mb-3.5 font-medium text-black dark:text-white">
-                Follow me on
+                Checkout repo
               </h4>
               <div className="flex items-center justify-center gap-3.5">
                 <a
