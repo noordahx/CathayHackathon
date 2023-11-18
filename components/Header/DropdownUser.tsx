@@ -53,7 +53,7 @@ const DropdownUser = () => {
           <Image
             width={112}
             height={112}
-            src={"/images/user/user-05.png"}
+            src={"/images/aerogens/group-photo.jpg"}
             alt="User"
           />
         </span>
