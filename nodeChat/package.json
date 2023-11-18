@@ -1,0 +1,15 @@
+{
+  "name": "nodechat",
+  "version": "1.0.0",
+  "description": "llama2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "author": "Nurdaulet",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/aiplatform": "^3.7.0",
+    "cors": "^2.8.5"
+  }
+}
